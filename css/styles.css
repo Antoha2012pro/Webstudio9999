@@ -7,6 +7,7 @@
     --background-color1: #F5F4FA;
     --background-color: #2F303A;
     --border-color: #EEE;
+    --border-portfolio: #ECECEC;
 }
 /* font-family: "Raleway", sans-serif; */
 /* font-family: "Roboto", sans-serif; */
@@ -46,6 +47,8 @@ img {
 .header {
     padding-top: 24px;
     padding-bottom: 25px;
+    border-bottom: 1px solid var(--border-portfolio);
+    width: 1600px;
 }
 
 header > .container {
@@ -116,13 +119,6 @@ header > .container {
 
 .roster-link:hover {
     color: var(--accent-color);
-}
-
-.line {
-    display: flex;
-    flex-direction: column;
-    width: 1600px;
-    height: 1px;
 }
 
 /* Головна */
