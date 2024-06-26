@@ -171,6 +171,7 @@ header > .container {
     padding-bottom: 10px;
     padding-right: 32px;
     padding-left: 32px;
+    border: none;
 }
 
 .we {
@@ -346,6 +347,7 @@ header > .container {
 
 .btn-items {
     display: flex;
+    justify-content: center;
     gap: 8px;
     margin-bottom: 50px;
     margin-top: 24px;
@@ -376,6 +378,7 @@ header > .container {
     padding-bottom: 6px;
     padding-right: 25px;
     padding-left: 25px;
+    border: none;
 }
 
 .btn-btn2 {
@@ -392,6 +395,7 @@ header > .container {
     padding-bottom: 6px;
     padding-right: 22px;
     padding-left: 22px;
+    border: none;
 }
 
 .goods-items {
