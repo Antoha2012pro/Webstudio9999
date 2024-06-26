@@ -6,6 +6,7 @@
     --color: #212121;
     --background-color1: #F5F4FA;
     --background-color: #2F303A;
+    --border-color: #EEE;
 }
 /* font-family: "Raleway", sans-serif; */
 /* font-family: "Roboto", sans-serif; */
@@ -117,6 +118,13 @@ header > .container {
     color: var(--accent-color);
 }
 
+.line {
+    display: flex;
+    flex-direction: column;
+    width: 1600px;
+    height: 1px;
+}
+
 /* Головна */
 
 .decision {
@@ -159,6 +167,10 @@ header > .container {
     
     display: flex;
     flex-direction: row;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 32px;
+    padding-left: 32px;
 }
 
 .we {
@@ -332,6 +344,13 @@ header > .container {
 
 /* Портфоліо */
 
+.btn-items {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 50px;
+    margin-top: 24px;
+}
+
 .btn-btn:hover {
     color: var(--title-color);
     text-align: center;
@@ -353,6 +372,37 @@ header > .container {
 
     border-radius: 4px;
     background: #F5F4FA;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.btn-btn2 {
+    color: var(--color);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.62; /* 162.5% */
+    letter-spacing: 0.48px;
+
+    border-radius: 4px;
+    background: #F5F4FA;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 22px;
+    padding-left: 22px;
+}
+
+.goods-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.goods-item {
+    border: 1px solid var(--border-color);
+    width: 370px;
 }
 
 .goods-title {
@@ -366,19 +416,27 @@ header > .container {
 .goods-caption {
     color: var(--color);
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 700;
     line-height: 1.88; /* 187.5% */
     letter-spacing: 0.48px;
+    width: 322px;
+    margin-right: 24px;
+    margin-left: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .goods-text {
     color: var(--desk-color);
-    -webkit-text-stroke-width: 1;
-    -webkit-text-stroke-color: #000; 
     font-size: 16px;
     font-weight: 400;
     line-height: 1.88; /* 187.5% */
     letter-spacing: 0.48px;
+    width: 322px;
+    margin-right: 24px;
+    margin-left: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .goods-img {
