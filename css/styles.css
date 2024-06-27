@@ -124,16 +124,14 @@ header > .container {
 /* Головна */
 
 .decision {
+    text-align: center;
     background-color: var(--background-color);
     padding-top: 200px;
     padding-bottom: 200px;
 }
 
-.div-decision {
-    width: 696px;
-}
-
 .decision-title {
+    width: 696px;
     color: var(--title-color);
     text-align: center;
     font-size: 44px;
@@ -141,17 +139,13 @@ header > .container {
     line-height: 1.36; /* 136.364% */
     letter-spacing: 2.64px;
     text-transform: uppercase;
-    padding-bottom: 30px;
-}
-
-.div-decision-btn {
-    display: flex;
-    justify-content: center;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .decision-btn {
     color: var(--title-color);
-    text-align: center;
     font-size: 16px;
     font-weight: 700;
     line-height: 1.88; /* 187.5% */
@@ -160,9 +154,6 @@ header > .container {
     border-radius: 4px;
     background: var(--accent-color);
     box-shadow: 0px 4px 4px 0px;
-    
-    display: flex;
-    flex-direction: row;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 32px;
