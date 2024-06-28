@@ -168,7 +168,7 @@ header > .container {
 
 .we-items {
     display: flex;
-    flex-direction: row;
+    gap: 30px;
 }
 
 .we-title {
@@ -178,6 +178,7 @@ header > .container {
     line-height: 1.14;
     letter-spacing: 0.42px;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 .we-subtitle {
@@ -200,12 +201,11 @@ header > .container {
     font-weight: 700;
     line-height: 1.17;
     letter-spacing: 1.08px;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .make-items {
     display: flex;
-    flex-direction: row;
     gap: 30px;
 }
 
@@ -228,23 +228,13 @@ header > .container {
     font-weight: 700;
     line-height: 1.17;
     letter-spacing: 1.08px;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
-.div-team-item1 {
+.div-team-item {
     background-color: var(--title-color);
-}
-
-.div-team-item2 {
-    background-color: var(--title-color); 
-}
-
-.div-team-item3 {
-    background-color: var(--title-color);
-}
-
-.div-team-item4 {
-    background-color: var(--title-color);
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .team-items {
@@ -266,9 +256,7 @@ header > .container {
     font-weight: 500;
     line-height: 1.19;
     letter-spacing: 0.48px;
-    display: flex;
-    justify-content: center;
-    padding-top: 30px;
+    margin-bottom: 10px;
 }
 
 .team-text {
@@ -278,10 +266,6 @@ header > .container {
     font-weight: 400;
     line-height: 1.19;
     letter-spacing: 0.48px;
-    display: flex;
-    justify-content: center;
-    padding-top: 10px;
-    padding-bottom: 30px;
 }
 
 /* Футер */
@@ -301,7 +285,7 @@ header > .container {
 }
 
 .footer-items {
-    padding-top: 20px;
+    margin-top: 20px;
 }
 
 .footer-link {
