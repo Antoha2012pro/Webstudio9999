@@ -320,12 +320,15 @@ header > .container {
 
 /* Портфоліо */
 
+.btn {
+    padding-top: 94px;
+    padding-bottom: 50px;
+}
+
 .btn-items {
     display: flex;
     justify-content: center;
     gap: 8px;
-    margin-bottom: 50px;
-    margin-top: 24px;
 }
 
 .btn-btn:hover {
@@ -389,15 +392,24 @@ header > .container {
     border: none;
 }
 
+.goods {
+    padding-bottom: 94px;
+}
+
 .goods-items {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
 }
 
-.goods-item {
+.goods-box {
     border: 1px solid var(--border-color);
+    border-top: none;
     width: 370px;
+    padding-right: 24px;
+    padding-left: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .goods-title {
@@ -415,10 +427,6 @@ header > .container {
     line-height: 1.88; /* 187.5% */
     letter-spacing: 0.48px;
     width: 322px;
-    margin-right: 24px;
-    margin-left: 24px;
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 .goods-text {
@@ -428,16 +436,8 @@ header > .container {
     line-height: 1.88; /* 187.5% */
     letter-spacing: 0.48px;
     width: 322px;
-    margin-right: 24px;
-    margin-left: 24px;
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 .goods-img {
     width: 370px;
-}
-
-.margin-bottom {
-    margin-bottom: 94px;
 }
