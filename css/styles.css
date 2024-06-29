@@ -288,6 +288,10 @@ header > .container {
     margin-top: 20px;
 }
 
+.footer-item {
+    margin-bottom: 9px;
+}
+
 .footer-link {
     color: var(--desk-color);
     font-size: 14px;
