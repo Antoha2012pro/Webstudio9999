@@ -39,7 +39,8 @@ img {
 .container {
     width: 1200px;
     padding: 0 15px; 
-    margin: 0 auto;  
+    margin: 0 auto; 
+    outline: 1px solid red; 
 }
 
 /* Хедер */
@@ -48,7 +49,6 @@ img {
     padding-top: 24px;
     padding-bottom: 25px;
     border-bottom: 1px solid var(--border-portfolio);
-    width: 1600px;
 }
 
 header > .container {
