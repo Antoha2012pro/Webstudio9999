@@ -402,6 +402,10 @@ header > .container {
     gap: 30px;
 }
 
+.goods-item {
+    flex-basis: calc((100% - 60px) / 3);
+}
+
 .goods-box {
     border: 1px solid var(--border-color);
     border-top: none;
