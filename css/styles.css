@@ -44,7 +44,7 @@ img {
 
 /* Хедер */
 
-.header {
+.header{
     padding-top: 24px;
     padding-bottom: 25px;
     border-bottom: 1px solid var(--border-portfolio);
@@ -124,7 +124,11 @@ header > .container {
 
 .decision {
     text-align: center;
-    background-color: var(--background-color);
+    /* background-color: var(--background-color); */
+    background-image: url(../img/ofis.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: 1600px 600px;
     padding-top: 200px;
     padding-bottom: 200px;
 }
@@ -158,6 +162,7 @@ header > .container {
     padding-right: 32px;
     padding-left: 32px;
     border: none;
+    box-shadow: none;
 }
 
 .we {
@@ -170,6 +175,46 @@ header > .container {
     gap: 30px;
 }
 
+.we-item:nth-child(1):before {
+    content: "";
+    width: 270px;
+    height: 120px;
+    flex-shrink: 0;
+    display: block;
+    border-radius: 4px;
+    background-image: url(../img/antena.jpg);
+}
+
+.we-item:nth-child(2):before {
+    content: "";
+    width: 270px;
+    height: 120px;
+    flex-shrink: 0;
+    display: block;
+    border-radius: 4px;
+    background-image: url(../img/timer.jpg);
+}
+
+.we-item:nth-child(3):before {
+    content: "";
+    width: 270px;
+    height: 120px;
+    flex-shrink: 0;
+    display: block;
+    border-radius: 4px;
+    background-image: url(../img/planing.jpg);
+}
+
+.we-item:nth-child(4):before {
+    content: "";
+    width: 270px;
+    height: 120px;
+    flex-shrink: 0;
+    display: block;
+    border-radius: 4px;
+    background-image: url(../img/kosmonaft.jpg);
+}
+
 .we-title {
     color: var(--color);
     font-size: 14px;
@@ -178,6 +223,7 @@ header > .container {
     letter-spacing: 0.42px;
     text-transform: uppercase;
     margin-bottom: 10px;
+    margin-top: 30px;
 }
 
 .we-subtitle {
@@ -234,6 +280,8 @@ header > .container {
     background-color: var(--title-color);
     padding-top: 30px;
     padding-bottom: 30px;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
 }
 
 .team-items {
@@ -406,6 +454,16 @@ header > .container {
     flex-basis: calc((100% - 60px) / 3);
 }
 
+.goods-item:hover {
+    width: 370px;
+    height: 404px;
+    border: 1px solid var(--border-color);
+    background: var(--title-color);
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+    border: none;
+}
+
+
 .goods-box {
     border: 1px solid var(--border-color);
     border-top: none;
@@ -415,7 +473,6 @@ header > .container {
     padding-top: 20px;
     padding-bottom: 20px;
 }
-
 .goods-caption {
     color: var(--color);
     font-size: 16px;
