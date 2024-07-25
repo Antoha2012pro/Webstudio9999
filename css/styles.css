@@ -132,7 +132,7 @@ header > .container {
 .decision {
     text-align: center;
     /* background-color: var(--background-color); */
-    background-image: url(../img/ofis.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url(../img/ofis.jpg);
     background-repeat: no-repeat;
     background-position-x: center;
     background-size: 1600px 600px;
