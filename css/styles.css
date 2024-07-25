@@ -164,6 +164,8 @@ header > .container {
     border-radius: 4px;
     background: var(--accent-color);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+background: #2196F3;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 32px;
@@ -421,23 +423,11 @@ header > .container {
 }
 
 .goods-btn2 {
-    color: var(--color);
-    text-align: center;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.62; /* 162.5% */
-    letter-spacing: 0.48px;
-
-    border-radius: 4px;
-    background: var(--background-color1);
-    padding-top: 6px;
-    padding-bottom: 6px;
     padding-right: 22px;
     padding-left: 22px;
-    border: none;
 }
 
-.goods-btn2:hover {
+.goods-btn:hover {
     color: var(--title-color);
     text-align: center;
     font-size: 16px;
@@ -484,7 +474,6 @@ header > .container {
     font-weight: 700;
     line-height: 1.88; /* 187.5% */
     letter-spacing: 0.48px;
-    width: 322px;
     margin-bottom: 4px;
 }
 
@@ -494,7 +483,6 @@ header > .container {
     font-weight: 400;
     line-height: 1.88; /* 187.5% */
     letter-spacing: 0.48px;
-    width: 322px;
 }
 
 .goods-img {
