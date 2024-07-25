@@ -47,6 +47,9 @@ img {
 .header{
     padding-top: 24px;
     padding-bottom: 25px;
+}
+
+.header-portfolio {
     border-bottom: 1px solid var(--border-portfolio);
 }
 
@@ -93,6 +96,10 @@ header > .container {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.28px;
+}
+
+.header-nav-portfolio, .header-nav-golovna {
+    color: var(--accent-color);
 }
 
 .header-nav:hover {
@@ -156,7 +163,7 @@ header > .container {
     
     border-radius: 4px;
     background: var(--accent-color);
-    box-shadow: 0px 4px 4px 0px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 32px;
@@ -276,7 +283,7 @@ header > .container {
     margin-bottom: 50px;
 }
 
-.div-team-item {
+.box-team-item {
     background-color: var(--title-color);
     padding-top: 30px;
     padding-bottom: 30px;
@@ -337,6 +344,7 @@ header > .container {
 
 .footer-item {
     margin-bottom: 9px;
+    font-style: normal;
 }
 
 .footer-item:last-child {
@@ -392,6 +400,7 @@ header > .container {
     letter-spacing: 0.48px;
     border-radius: 4px;
     background: var(--accent-color);
+    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
 }
 
 .goods-btn {
@@ -442,6 +451,7 @@ header > .container {
     padding-right: 22px;
     padding-left: 22px;
     border: none;
+    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
 }
 
 .goods-items {
@@ -465,12 +475,7 @@ header > .container {
 }
 
 .goods-item:hover {
-    width: 370px;
-    height: 399px;
-    border: 1px solid var(--border-color);
-    background: var(--title-color);
     box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
-    border: none;
 }
 
 .goods-caption {
