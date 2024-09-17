@@ -132,7 +132,9 @@ header > .container {
 
 .roster-link:hover {
     color: var(--accent-color);
-    fill: var(--accent-color);
+    .roster-img{
+        fill: var(--accent-color);
+    }
 }
 
 .roster-img {
@@ -140,6 +142,7 @@ header > .container {
     height: 12px;
     margin-top: auto;
     margin-bottom: auto;
+    fill: var(--desk-color);
 }
 
 .roster-item:nth-child(2) > .roster-link > .roster-img {
