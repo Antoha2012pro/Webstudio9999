@@ -137,7 +137,9 @@ header > .container {
 
 .roster-img {
     width: 16px;
-    height: 12px; 
+    height: 12px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .roster-item:nth-child(2) > .roster-link > .roster-img {
