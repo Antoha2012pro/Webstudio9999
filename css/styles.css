@@ -97,6 +97,7 @@ header > .container {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.28px;
+    transition: 0.2s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
 .header-nav-portfolio, .header-nav-golovna {
@@ -126,6 +127,7 @@ header > .container {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.28px;
+    transition: 0.2s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
 .roster-link:hover {
@@ -188,6 +190,12 @@ header > .container {
     padding-right: 32px;
     padding-left: 32px;
     border: none;
+    transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.decision-btn:hover {
+    background-color: var(--clients-border);
+    color: var(--background-color);
 }
 
 .we {
@@ -304,10 +312,11 @@ header > .container {
 .team-item {
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
+    background-color: var(--title-color);
+    padding-bottom: 30px;
 }
 
 .box-team-item {
-    background-color: var(--title-color);
     padding-top: 30px;
     padding-bottom: 16px;
     border-radius: 0px 0px 4px 4px;
@@ -357,16 +366,21 @@ header > .container {
     padding: 12px 12px 12px 12px;
     background-color: var(--title-color);
     border-radius: 50%;
+    transition: 1s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
 .team-element-link:hover {
     background-color: var(--accent-color);
+    .team-element-img{
+        fill: var(--title-color);
+    }
 }
 
 .team-element-img {
     width: 20px;
     height: 20px;
-    fill: var(--desk-color);
+    fill: var(--clients-border);
+    transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
 .clients {
@@ -398,6 +412,7 @@ header > .container {
     width: 170px;
     height: 92px;
     fill: var(--clients-border);
+    transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
 .clients-link:hover {
@@ -496,6 +511,7 @@ header > .container {
     padding: 12px 12px 12px 12px;
     background-color: var(--footer-border-color);
     border-radius: 50%;
+    transition: 1s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
 .footer-element-link:hover {
@@ -549,6 +565,7 @@ header > .container {
     padding-right: 25px;
     padding-left: 25px;
     border: none;
+    transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
 .goods-items {
@@ -559,6 +576,7 @@ header > .container {
 
 .goods-item {
     flex-basis: calc((100% - 60px) / 3);
+    transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
 .goods-box {
