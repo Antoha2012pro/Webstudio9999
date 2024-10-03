@@ -10,6 +10,7 @@
     --border-portfolio: #ECECEC;
     --clients-border: #AFB1B8;
     --footer-border-color: #44454e;
+    --modal-color: #212121;
 }
 /* font-family: "Raleway", sans-serif; */
 /* font-family: "Roboto", sans-serif; */
@@ -640,4 +641,55 @@ header > .container {
 
 .goods-img {
     width: 100%;
+}
+
+/* ============ Модальне вікно ============ */
+
+.backdrop {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 255, 225, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    padding-top: 40px;
+    width: 528px;
+    height: 581px;
+    border-radius: 4px;
+    background: var(--title-color);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
+}
+
+.modal-title {
+    color: var(--modal-color);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: 0.6px;
+    margin-bottom: 12px;
+}
+
+.modal-signature {
+    color: var(--desk-color);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.12px;
+}
+
+.modal-input {
+    width: 448px;
+    height: 40px;
+}
+
+.modal-close-img {
+    width: 18px;
+    height: 18px;
 }
