@@ -335,6 +335,21 @@
             </li>
         </ul>
         </div>
+        <div class="mailing">
+            <form class="mailing-form">
+                <div class="mailing-box">
+                <label for="mailing" class="mailing-signature">Підпишіться на розсилку</label>
+                <input type="email" id="mailing" class="mailing-input" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                title="Будь ласка, введіть коректну електронну адресу." placeholder="E-mail">
+                </div>
+                <button class="mailing-btn">
+                    Підписатися
+                <svg class="mailing-img">
+                    <use href="./img/symbol-defs.svg#icon-send"></use>
+                </svg>
+                </button>
+            </form>
+        </div>
         </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>

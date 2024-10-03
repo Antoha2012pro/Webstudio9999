@@ -468,7 +468,6 @@ header > .container {
 
 .footer > .container {
     display: flex;
-    gap: 70px;
 }
 
 .footer-address {
@@ -520,6 +519,7 @@ header > .container {
 
 .footer-networks {
     padding-top: 12px;
+    margin-left: 70px;
 }
 
 .footer-title {
@@ -553,6 +553,62 @@ header > .container {
 .footer-element-img {
     width: 20px;
     height: 20px;
+    fill: var(--title-color);
+}
+
+.mailing {
+    margin-top: 12px;
+    margin-left: 93px;
+}
+
+.mailing-form {
+    display: flex;
+}
+
+.mailing-signature {
+    color: var(--title-color);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.mailing-input {
+    width: 358px;
+    height: 50px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.30);
+    background: rgba(33, 150, 243, 0.00);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    padding-left: 16px;
+    margin-right: 12px;
+}
+
+.mailing-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    color: var(--title-color);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.88;
+    letter-spacing: 0.96px;
+    border-radius: 4px;
+    background: var(--accent-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    border: none;
+    margin-top: 36px;
+}
+
+.mailing-img {
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
     fill: var(--title-color);
 }
 
