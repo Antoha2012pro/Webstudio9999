@@ -342,13 +342,36 @@
             <form class="modal-form">
                 <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
                 <label for="name" class="modal-signature">Ім'я</label>
+                <div class="input-box">
                 <input type="text" id="name" class="modal-input">
+                <svg class="input-img">
+                    <use href="./img/symbol-defs.svg#icon-person-modal"></use>
+                </svg>
+                </div>
                 <label for="tel" class="modal-signature">Телефон</label>
+                <div class="input-box">
                 <input type="text" id="tel" class="modal-input">
-                <label for="mail" class="modal-signature">Коментар</label>
+                <svg class="input-img">
+                    <use href="./img/symbol-defs.svg#icon-phone-modal"></use>
+                </svg>   
+                </div>
+                <label for="mail" class="modal-signature">Пошта</label>
+                <div class="input-box">
                 <input type="text" id="mail" class="modal-input">
+                <svg class="input-img">
+                    <use href="./img/symbol-defs.svg#icon-mail-modal"></use>
+                </svg>
+                </div>
+                <label for="comment" class="modal-signature">Коментар</label>
+                <textarea name="" id="comment" class="modal-textarea" placeholder="Введіть текст"></textarea>
+                <label class="modal-chek-label">
+                    <input type="checkbox" class="modal-chekbox">
+                    <span class="modal-text">Погоджуюся з розсилкою та приймаю </span>
+                    <a href="https://www.google.com/search?q=%D0%A3%D0%BC%D0%BE%D0%B2%D0%B8+%D0%B4%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D1%83&rlz=1C1CHBD_enDE1113DE1113&oq=%D0%A3%D0%BC%D0%BE%D0%B2%D0%B8+%D0%B4%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D1%83&gs_lcrp=EgZjaHJvbWUyCQgAEEUYORiABDIHCAEQABiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCDU0NDZqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8" class="modal-link" target="_blank">Умови договору</a>
+                </label>
+                <button type="submit" class="modal-btn">Відправити</button>
             </form>
-        <button class="btn">
+        <button class="modal-close-btn">
             <svg class="modal-close-img">
                 <use href="./img/symbol-defs.svg#icon-close"></use>
             </svg>
