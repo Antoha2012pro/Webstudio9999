@@ -685,7 +685,7 @@ header > .container {
     color: var(--color);
     font-size: 16px;
     font-weight: 700;
-    line-height: 1.88; /* 187.5% */
+    line-height: 1.88;
     letter-spacing: 0.48px;
     margin-bottom: 4px;
 }
@@ -694,7 +694,7 @@ header > .container {
     color: var(--desk-color);
     font-size: 16px;
     font-weight: 400;
-    line-height: 1.88; /* 187.5% */
+    line-height: 1.88;
     letter-spacing: 0.48px;
 }
 
@@ -737,7 +737,7 @@ header > .container {
     text-align: center;
     font-size: 20px;
     font-weight: 700;
-    line-height: normal;
+    line-height: 1.15;
     letter-spacing: 0.6px;
     margin-bottom: 12px;
 }
@@ -746,7 +746,7 @@ header > .container {
     color: var(--desk-color);
     font-size: 12px;
     font-weight: 400;
-    line-height: normal;
+    line-height: 1.67;
     letter-spacing: 0.12px;
     display: block;
     margin-left: 40px;
@@ -799,7 +799,7 @@ header > .container {
     color: var(--modal-placehorlder);
     font-size: 12px;
     font-weight: 400;
-    line-height: normal;
+    line-height: 1.17;
     letter-spacing: 0.12px;
     margin-bottom: 20px;
     display: block;
@@ -826,7 +826,7 @@ header > .container {
     color: var(--desk-color);
     font-size: 14px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.71;
     letter-spacing: 0.42px;
 }
 
@@ -834,7 +834,7 @@ header > .container {
     color: var(--accent-color);
     font-size: 14px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.71;
     letter-spacing: 0.42px;
     text-decoration-line: underline;
 }
@@ -849,7 +849,7 @@ header > .container {
     text-align: center;
     font-size: 16px;
     font-weight: 700;
-    line-height: 30px;
+    line-height: 1.88;
     letter-spacing: 0.96px;
     display: block;
     margin: 0 auto;
