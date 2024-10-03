@@ -658,6 +658,12 @@ header > .container {
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 1;
+}
+
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
 }
 
 .modal {
@@ -706,12 +712,15 @@ header > .container {
     padding-left: 42px;
 }
 
-.modal-input:hover, .modal-input:focus{
-    border: 1px solid var(--accent-color);
-    outline: none;
-    .input-img{
-        fill: var(--accent-color);
-    }
+.modal-input:hover,
+.modal-input:focus {
+    border: none;
+    outline: 1px solid var(--accent-color);
+}
+
+.modal-input:hover + .input-img,
+.modal-input:focus + .input-img {
+    fill: var(--accent-color);
 }
 
 .input-img {
