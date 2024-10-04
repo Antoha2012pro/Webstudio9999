@@ -205,6 +205,7 @@ header > .container {
 .decision-btn:hover, .decision-btn:focus {
     background-color: var(--clients-border);
     color: var(--background-color);
+    cursor: pointer;
 }
 
 .we {
@@ -605,6 +606,10 @@ header > .container {
     margin-top: 36px;
 }
 
+.mailing-btn:hover {
+    cursor: pointer;
+}
+
 .mailing-img {
     margin-left: 10px;
     width: 24px;
@@ -723,9 +728,7 @@ header > .container {
 }
 
 .modal {
-    padding-top: 40px;
-    width: 528px;
-    height: 581px;
+    padding: 40px;
     border-radius: 4px;
     background: var(--title-color);
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
@@ -749,7 +752,6 @@ header > .container {
     line-height: 1.67;
     letter-spacing: 0.12px;
     display: block;
-    margin-left: 40px;
     margin-bottom: 4px;
 }
 
@@ -761,7 +763,6 @@ header > .container {
     width: 448px;
     height: 40px;
     display: block;
-    margin-left: 40px;
     margin-bottom: 10px;
     border-radius: 4px;
     border: 1px solid var(--modal-border-color);
@@ -783,13 +784,12 @@ header > .container {
     width: 18px;
     height: 18px;
     position: absolute;
-    left: 52px;
+    left: 12px;
     top: 11px;
 }
 
 .modal-textarea {
     display: block;
-    margin-left: 40px;
     width: 448px;
     height: 120px;
     border-radius: 4px;
@@ -854,6 +854,13 @@ header > .container {
     display: block;
     margin: 0 auto;
     margin-top: 40px;
+    transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.modal-btn:hover, .modal-btn:focus {
+    background-color: var(--clients-border);
+    color: var(--background-color);
+    cursor: pointer;
 }
 
 .modal-close-btn {
@@ -872,10 +879,13 @@ header > .container {
 .modal-close-img {
     width: 18px;
     height: 18px;
+    transition: 0.2s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
 .modal-close-btn:hover, .modal-close-btn:focus {
+    outline: none;
     .modal-close-img{
         fill: var(--accent-color);
+        cursor: pointer;
     }
 }
