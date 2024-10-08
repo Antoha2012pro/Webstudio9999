@@ -85,6 +85,10 @@ header > .container {
     margin-right: 93px;
 }
 
+.logo:focus {
+    outline: none;
+}
+
 .header-navigation {
     display: flex;
     align-items: center;
@@ -109,6 +113,7 @@ header > .container {
 }
 
 .header-nav:hover, .header-nav:focus {
+    outline: none;
     color: var(--accent-color);
     font-size: 14px;
     font-weight: 500;
@@ -135,6 +140,7 @@ header > .container {
 }
 
 .roster-link:hover, .roster-link:focus {
+    outline: none;
     color: var(--accent-color);
     .roster-img{
         fill: var(--accent-color);
@@ -203,6 +209,7 @@ header > .container {
 }
 
 .decision-btn:hover, .decision-btn:focus {
+    outline: none;
     background-color: var(--clients-border);
     color: var(--background-color);
     cursor: pointer;
@@ -403,6 +410,7 @@ header > .container {
 }
 
 .team-element-link:hover, .team-element-link:focus {
+    outline: none;
     background-color: var(--accent-color);
     .team-element-img{
         fill: var(--title-color);
@@ -449,6 +457,7 @@ header > .container {
 }
 
 .clients-link:hover, .clients-link:focus {
+    outline: none;
     fill: var(--accent-color);
     border: 1px solid var(--accent-color);
 }
@@ -465,6 +474,28 @@ header > .container {
     background-color: var(--background-color);
     padding-top: 60px;
     padding-bottom: 60px;
+}
+
+.logo-footer1 {
+    color: var(--accent-color);
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.38;
+    letter-spacing: 0.78px;
+}
+
+.logo-footer2 {
+    color: var(--title-color);
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.38;
+    letter-spacing: 0.78px;
+}
+
+.footer-logo:focus {
+    outline: none;
 }
 
 .footer > .container {
@@ -500,22 +531,8 @@ header > .container {
     letter-spacing: 0.42px;
 }
 
-.logo-footer1 {
-    color: var(--accent-color);
-    font-family: Raleway;
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 1.38;
-    letter-spacing: 0.78px;
-}
-
-.logo-footer2 {
-    color: var(--title-color);
-    font-family: Raleway;
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 1.38;
-    letter-spacing: 0.78px;
+.footer-link:focus, .footer-link-white:focus {
+    outline: none;
 }
 
 .footer-networks {
@@ -549,6 +566,7 @@ header > .container {
 
 .footer-element-link:hover, .footer-element-link:focus {
     background-color: var(--accent-color);
+    outline: none;
 }
 
 .footer-element-img {
@@ -588,6 +606,10 @@ header > .container {
     margin-right: 12px;
 }
 
+.mailing-input:focus {
+    outline: none;
+}
+
 .mailing-btn {
     display: flex;
     justify-content: center;
@@ -604,9 +626,13 @@ header > .container {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     border: none;
     margin-top: 36px;
+    transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
-.mailing-btn:hover {
+.mailing-btn:hover, .mailing-btn:focus {
+    outline: none;
+    background-color: var(--clients-border);
+    color: var(--background-color);
     cursor: pointer;
 }
 
