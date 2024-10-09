@@ -99,6 +99,10 @@ header > .container {
     gap: 50px;
 }
 
+.header-item {
+    position: relative;
+}
+
 .header-nav {
     color: var(--color);
     font-size: 14px;
@@ -108,17 +112,32 @@ header > .container {
     transition: 0.2s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
-.header-nav-portfolio, .header-nav-golovna {
+.header-nav::after {
+    content: '';
+    position: absolute;
+    bottom: -33.7px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background: var(--accent-color);
+    transition: 0.2s cubic-bezier(0.39, 0.575, 0.565, 1);
+    opacity: 0;
+}
+
+.header-nav-golovna::after, .header-nav-portfolio::after {
+    content: '';
+    opacity: 1;
+}
+
+.header-nav-golovna, .header-nav-portfolio {
     color: var(--accent-color);
 }
 
-.header-nav:hover, .header-nav:focus {
+.header-nav:hover, .header-nav:focus, .header-nav:hover::after, .header-nav:focus::after {
     outline: none;
+    opacity: 1;
     color: var(--accent-color);
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.28px;
 }
 
 .header-roster {
@@ -126,6 +145,10 @@ header > .container {
     align-items: center;
     gap: 50px;
     margin-left: 318px;
+}
+
+.roster-item {
+    position: relative;
 }
 
 .roster-link {
@@ -139,12 +162,26 @@ header > .container {
     transition: 0.2s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
-.roster-link:hover, .roster-link:focus {
+.roster-link:hover, .roster-link:focus, .roster-link:hover::after, .roster-link:focus::after {
+    opacity: 1;
     outline: none;
     color: var(--accent-color);
     .roster-img{
         fill: var(--accent-color);
     }
+}
+
+.roster-link::after {
+    content: '';
+    position: absolute;
+    bottom: -35px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background: var(--accent-color);
+    transition: 0.2s cubic-bezier(0.39, 0.575, 0.565, 1);
+    opacity: 0;
 }
 
 .roster-img {
@@ -160,8 +197,7 @@ header > .container {
 }
 
 .roster-item:nth-child(2) > .roster-link > .roster-span {
-    width: 142px;
-
+    width: 122px;
 }
 
 /* Головна */
@@ -657,18 +693,6 @@ header > .container {
     margin-bottom: 50px;
 }
 
-.goods-btn:hover, .goods-btn:focus {
-    color: var(--title-color);
-    text-align: center;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.62; /* 162.5% */
-    letter-spacing: 0.48px;
-    border-radius: 4px;
-    background: var(--accent-color);
-    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
-}
-
 .goods-btn {
     color: var(--color);
     text-align: center;
@@ -687,6 +711,20 @@ header > .container {
     transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
+.goods-btn:hover, .goods-btn:focus {
+    cursor: pointer;
+    color: var(--title-color);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.62; /* 162.5% */
+    letter-spacing: 0.48px;
+    border-radius: 4px;
+    background: var(--accent-color);
+    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+    outline: none;
+}
+
 .goods-items {
     display: flex;
     flex-wrap: wrap;
@@ -695,7 +733,52 @@ header > .container {
 
 .goods-item {
     flex-basis: calc((100% - 60px) / 3);
+    position: relative;
     transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.goods-item:hover,.goods-item:focus{
+    .goods-opacity{
+        opacity: 1;
+    }
+}
+
+/* З цим фокусом допоміг ChatGPT */
+
+.goods-item:hover, .goods-item:focus-within {
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 
+                0px 4px 4px rgba(0, 0, 0, 0.06), 
+                1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.goods-item:focus-within .goods-opacity {
+    opacity: 1;
+}
+
+.goods-link:focus {
+    outline: none;
+}
+
+.goods-img {
+    width: 100%;
+}
+
+.goods-opacity {
+    background: rgba(33, 150, 243, 0.90);
+    position: absolute;
+    padding: 63px 24px;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.goods-opacity-text {
+    color: var(--title-color);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.56;
+    letter-spacing: 0.54px;
 }
 
 .goods-box {
@@ -706,10 +789,6 @@ header > .container {
     padding-left: 24px;
     padding-top: 20px;
     padding-bottom: 20px;
-}
-
-.goods-item:hover, .goods-item:focus {
-    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
 }
 
 .goods-caption {
@@ -727,10 +806,6 @@ header > .container {
     font-weight: 400;
     line-height: 1.88;
     letter-spacing: 0.48px;
-}
-
-.goods-img {
-    width: 100%;
 }
 
 /* ============ Модальне вікно ============ */
@@ -797,8 +872,8 @@ header > .container {
 
 .modal-input:hover,
 .modal-input:focus {
-    border: none;
-    outline: 1px solid var(--accent-color);
+    outline: none;
+    border: 1px solid var(--accent-color);
 }
 
 .modal-input:hover + .input-img,
@@ -887,6 +962,7 @@ header > .container {
     background-color: var(--clients-border);
     color: var(--background-color);
     cursor: pointer;
+    outline: none;
 }
 
 .modal-close-btn {
