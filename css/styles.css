@@ -109,7 +109,7 @@ header > .container {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.28px;
-    transition: 0.2s cubic-bezier(0.39, 0.575, 0.565, 1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-nav::after {
@@ -121,7 +121,7 @@ header > .container {
     height: 4px;
     border-radius: 2px;
     background: var(--accent-color);
-    transition: 0.2s cubic-bezier(0.39, 0.575, 0.565, 1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     opacity: 0;
 }
 
@@ -159,7 +159,7 @@ header > .container {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.28px;
-    transition: 0.2s cubic-bezier(0.39, 0.575, 0.565, 1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .roster-link:hover, .roster-link:focus, .roster-link:hover::after, .roster-link:focus::after {
@@ -190,6 +190,7 @@ header > .container {
     margin-top: auto;
     margin-bottom: auto;
     fill: var(--desk-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .roster-item:nth-child(2) > .roster-link > .roster-img {
@@ -241,7 +242,7 @@ header > .container {
     padding-right: 32px;
     padding-left: 32px;
     border: none;
-    transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .decision-btn:hover, .decision-btn:focus {
@@ -442,7 +443,7 @@ header > .container {
     padding: 12px 12px 12px 12px;
     background-color: var(--title-color);
     border-radius: 50%;
-    transition: 1s cubic-bezier(0.39, 0.575, 0.565, 1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-element-link:hover, .team-element-link:focus {
@@ -457,7 +458,7 @@ header > .container {
     width: 20px;
     height: 20px;
     fill: var(--clients-border);
-    transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients {
@@ -489,7 +490,7 @@ header > .container {
     width: 170px;
     height: 92px;
     fill: var(--clients-border);
-    transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:hover, .clients-link:focus {
@@ -597,7 +598,7 @@ header > .container {
     padding: 12px 12px 12px 12px;
     background-color: var(--footer-border-color);
     border-radius: 50%;
-    transition: 1s cubic-bezier(0.39, 0.575, 0.565, 1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-element-link:hover, .footer-element-link:focus {
@@ -662,7 +663,7 @@ header > .container {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     border: none;
     margin-top: 36px;
-    transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mailing-btn:hover, .mailing-btn:focus {
@@ -670,6 +671,9 @@ header > .container {
     background-color: var(--clients-border);
     color: var(--background-color);
     cursor: pointer;
+    .mailing-img{
+        fill: var(--background-color);
+    }
 }
 
 .mailing-img {
@@ -677,6 +681,7 @@ header > .container {
     width: 24px;
     height: 24px;
     fill: var(--title-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Портфоліо */
@@ -708,7 +713,7 @@ header > .container {
     padding-right: 25px;
     padding-left: 25px;
     border: none;
-    transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .goods-btn:hover, .goods-btn:focus {
@@ -734,7 +739,7 @@ header > .container {
 .goods-item {
     flex-basis: calc((100% - 60px) / 3);
     position: relative;
-    transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .goods-item:hover,.goods-item:focus{
@@ -770,7 +775,7 @@ header > .container {
     top: 0;
     left: 0;
     opacity: 0;
-    transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .goods-opacity-text {
@@ -868,6 +873,7 @@ header > .container {
     border-radius: 4px;
     border: 1px solid var(--modal-border-color);
     padding-left: 42px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:hover,
@@ -887,6 +893,7 @@ header > .container {
     position: absolute;
     left: 12px;
     top: 11px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-textarea {
@@ -904,6 +911,7 @@ header > .container {
     letter-spacing: 0.12px;
     margin-bottom: 20px;
     display: block;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-textarea:hover, .modal-textarea:focus {
@@ -955,7 +963,7 @@ header > .container {
     display: block;
     margin: 0 auto;
     margin-top: 40px;
-    transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-btn:hover, .modal-btn:focus {
@@ -976,12 +984,13 @@ header > .container {
     border-radius: 50%;
     border: 1px solid var(--modal-border-color);
     padding: 6px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-img {
     width: 18px;
     height: 18px;
-    transition: 0.2s cubic-bezier(0.39, 0.575, 0.565, 1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-btn:hover, .modal-close-btn:focus {
